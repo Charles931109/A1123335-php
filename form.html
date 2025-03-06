@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <title>迎新活動介紹</title>
+    <meta charset="utf-8" />
+    <body bgcolor="black" text="WHITE">
+      <h1>迎新活動報名</h1>
+      <hr width="80%" color="WHITE" />
+      <style type="text/css">
+        .tg {
+          border-collapse: collapse;
+          border-spacing: 0;
+          margin: 0px auto;
+        }
+        .tg td {
+          border-color: black;
+          border-style: solid;
+          border-width: 1px;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          overflow: hidden;
+          padding: 20px 20px;
+          word-break: normal;
+        }
+        .tg th {
+          border-color: black;
+          border-style: solid;
+          border-width: 1px;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          font-weight: normal;
+          overflow: hidden;
+          padding: 20px 20px;
+          word-break: normal;
+        }
+        .tg .tg-asn5 {
+          background-color: #000000;
+          border-color: #ffffff;
+          color: #ffffff;
+          font-size: 36px;
+          text-align: left;
+          vertical-align: top;
+        }
+        .tg .tg-j9b6 {
+          background-color: #000000;
+          border-color: #ffffff;
+          color: #ffffff;
+          font-size: 36px;
+          position: -webkit-sticky;
+          position: sticky;
+          text-align: left;
+          top: -1px;
+          vertical-align: top;
+          will-change: transform;
+        }
+        @media screen and (max-width: 767px) {
+          .tg {
+            width: auto !important;
+          }
+          .tg col {
+            width: auto !important;
+          }
+          .tg-wrap {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: auto 0px;
+          }
+        }
+      </style>
+      <div class="tg-wrap">
+        <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-j9b6">行程</th>
+              <th class="tg-j9b6">簡介</th>
+              <th class="tg-j9b6">價格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-asn5">行程A</td>
+              <td class="tg-asn5">a</td>
+              <td class="tg-asn5">1000</td>
+            </tr>
+            <tr>
+              <td class="tg-asn5">行程B</td>
+              <td class="tg-asn5">b</td>
+              <td class="tg-asn5">2000</td>
+            </tr>
+            <tr>
+              <td class="tg-asn5">行程C</td>
+              <td class="tg-asn5">c</td>
+              <td class="tg-asn5">3000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h1>報名表單</h1>
+      <form action="process.php" method="post">
+        <label for="name">真實姓名：</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="phone">手機號碼：</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{10}"
+          required
+        /><br /><br />
+
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label>性別：</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">男</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">女</label><br /><br />
+
+        <label for="course">行程：</label>
+        <select id="course" name="course" required>
+          <option value="行程A">行程A</option>
+          <option value="行程B">行程B</B></option>
+          <option value="行程C">行程C</option></select
+        ><br /><br />
+
+        <button type="submit">報名</button>
+        <button type="reset">清除</button>
+      </form>
+
+      <br />
+      <a href="index.html">回首頁</a>
+    </body>
+  </head>
+</html>
