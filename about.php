@@ -35,9 +35,5 @@ if($x==0){
     }
 }
 echo "<br>";
-
-
-
 echo "Your comments:".nl2br(htmlentities($uComment));
-
 ?>
