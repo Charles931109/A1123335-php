@@ -1,7 +1,8 @@
 FROM php:8.2-apache
 
-WORKDIR /var/www/html
 
-COPY . /var/www/html/
+RUN printf '<Directory /var/www/html/>\n\tOptions +Indexes\n</Directory>\n' > /etc/apache2/conf-available/indexes.conf && a2enconf indexes
+
+WORKDIR /var/www/html
 
 EXPOSE 80
