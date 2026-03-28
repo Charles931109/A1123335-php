@@ -3,8 +3,8 @@
 session_start(); 
 
 
-$correct_user = "admin";
-$correct_pass = "1234";
+$correct_user = "123";
+$correct_pass = "123";
 
 
 $input_user = $_POST["username"];
