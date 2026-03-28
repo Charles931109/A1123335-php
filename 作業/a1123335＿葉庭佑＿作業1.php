@@ -1,5 +1,15 @@
+<?php
+
+session_start();
+if (!isset($_SESSION["is_login"])||$_SESSION["is_login"]!==true){
+    header("location:login.php");
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW"> 
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +18,12 @@
 
 <body>
     <h1>夏令營報名表</h1>
-    <form action="" method="post">
+    <form action="result.php" method="post">
         姓名：<input type="text" name="uName" placeholder="請輸入姓名" required><br />
 
         性別：
-        男<input type="radio" name="mGender" value="m">
-        女<input type="radio" name="mGender" value="f" checked><br />
+        男<input type="radio" name="mGender" value="男">
+        女<input type="radio" name="mGender" value="女" checked><br />
 
         飲食習慣：
         葷食<input type="checkbox" name="diet[]" value="meat" checked>
