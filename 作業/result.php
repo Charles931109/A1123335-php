@@ -35,6 +35,6 @@ if (!isset($_SESSION["is_login"]) || $_SESSION["is_login"] !== true) {
         </li>
     </ul>
 
-    <a href="login.php">回首頁 (或重新登入)</a>
+    <a href="login.php">回首頁</a>
 </body>
 </html>
