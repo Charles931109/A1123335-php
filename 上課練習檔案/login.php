@@ -1,5 +1,6 @@
+<h1>登入</h1>
 <form action="loginCheck.php" method="POST">
-    ID:<input type="text" name="uID"><br>
-    Password:<input type="password" name="uPWD"><br>
-    <input type="submit">
+    ID: <input type="text" name="uName"><br>
+    Password: <input type="password" name="uPwd"><br>
+    <input type="submit" value="登入">
 </form>

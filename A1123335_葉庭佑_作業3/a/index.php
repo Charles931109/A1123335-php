@@ -2,10 +2,9 @@
 session_start();
 
 if(isset($_COOKIE['uName'])){
-    echo $_COOKIE['uName']."歡迎光臨";
-    echo "<a href='cookieDEL.php'>刪除COOKIE</a>";
+    echo "緩光臨，您的ID是：" . $_COOKIE['uName'] . " ";
+    echo "<a href='cookieDEL.php'>刪除 COOKIE</a><br/>";
 }
-
 ?>
 
 <h1>登入系統</h1>
