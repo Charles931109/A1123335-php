@@ -1,7 +1,9 @@
 <?php
-
+// 任何需要讀取或寫入 Session 的頁面，第一行都要 session_start()
 session_start();
+// 權限檢查：如果 Session 中的 is_login 不存在，或者不等於 true
 if (!isset($_SESSION["is_login"])||$_SESSION["is_login"]!==true){
+    // 代表未登入或登入異常，強制導向回登入頁面
     header("location:login.php");
     exit;
 }
